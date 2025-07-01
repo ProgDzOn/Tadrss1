@@ -30,6 +30,17 @@
       color: white;
       padding: 100px 0;
     }
+    @media (max-width: 767px) {
+      .hero-section {
+        padding: 60px 0;
+      }
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+      .hero-section p.lead {
+        font-size: 1rem;
+      }
+    }
     
     .subject-card {
       transition: all 0.3s;
@@ -37,72 +48,115 @@
       overflow: hidden;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
       border-top: 4px solid var(--primary-color);
+      margin-bottom: 1rem;
     }
     
     .subject-card.math {
       border-top-color: var(--math-color);
     }
-    
     .subject-card.physics {
       border-top-color: var(--physics-color);
     }
-    
     .subject-card.science {
       border-top-color: var(--science-color);
     }
-    
     .subject-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
-    
     .level-badge {
       position: absolute;
       top: 10px;
       left: 10px;
       font-size: 0.8rem;
     }
-    
     .form-section {
       background: white;
       border-radius: 10px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
       border-top: 5px solid var(--primary-color);
+      margin-bottom: 1.5rem;
     }
-    
     footer {
       background-color: var(--dark-color);
       color: white;
     }
-
-    /* تصحيحات إضافية */
     .nav-link.active {
       font-weight: bold;
     }
-    
     .form-control:focus {
       border-color: var(--primary-color);
       box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
     }
-    
     .btn-primary {
       background-color: var(--primary-color);
       border-color: var(--primary-color);
     }
-    
     .btn-primary:hover {
       background-color: #2980b9;
       border-color: #2980b9;
     }
-    
     .btn-outline-primary {
       color: var(--primary-color);
       border-color: var(--primary-color);
     }
-    
     .btn-outline-primary:hover {
       background-color: var(--primary-color);
       color: white;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 991.98px) {
+      .navbar .container {
+        flex-direction: row;
+      }
+      .navbar-nav {
+        text-align: right;
+      }
+    }
+    @media (max-width: 767.98px) {
+      .subject-card {
+        margin-bottom: 1.5rem;
+      }
+      .level-badge {
+        font-size: 0.7rem;
+        top: 6px;
+        left: 6px;
+      }
+      .card-body {
+        padding: 1.2rem !important;
+      }
+      .form-section {
+        padding: 1rem !important;
+      }
+      .footer .container,
+      footer .container {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .footer h4, .footer h5 {
+        font-size: 1.1rem;
+      }
+      .footer p, .footer a, .footer li {
+        font-size: 0.96rem;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .hero-section {
+        padding: 40px 0;
+      }
+      .subject-card,
+      .form-section {
+        margin-bottom: 1.2rem;
+      }
+      .footer .input-group {
+        flex-direction: column;
+      }
+      .footer .input-group input,
+      .footer .input-group button {
+        width: 100%;
+        margin-bottom: 5px;
+      }
     }
   </style>
 </head>
@@ -144,8 +198,8 @@
     <div class="container">
       <h1 class="display-4 fw-bold mb-4">التعليم المتوسط في المواد العلمية واللغوية</h1>
       <p class="lead mb-5">أفضل شرح للمواد العلمية واللغات لجميع مستويات المتوسط</p>
-      <div class="d-flex justify-content-center gap-3">
-        <a href="#register" class="btn btn-primary btn-lg px-4">
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+        <a href="#register" class="btn btn-primary btn-lg px-4 mb-2 mb-sm-0">
           <i class="fas fa-user-graduate me-2"></i>سجل الآن
         </a>
         <a href="#subjects" class="btn btn-outline-light btn-lg px-4">
@@ -165,7 +219,7 @@
       
       <div class="row g-4">
         <!-- Math Card -->
-        <div class="col-md-3">
+        <div class="col-12 col-sm-6 col-md-3">
           <div class="subject-card math h-100">
             <div class="card-body text-center p-4">
               <i class="fas fa-square-root-alt fa-4x mb-3" style="color: var(--math-color);"></i>
@@ -177,7 +231,7 @@
         </div>
         
         <!-- Physics Card -->
-        <div class="col-md-3">
+        <div class="col-12 col-sm-6 col-md-3">
           <div class="subject-card physics h-100">
             <div class="card-body text-center p-4">
               <i class="fas fa-atom fa-4x mb-3" style="color: var(--physics-color);"></i>
@@ -189,7 +243,7 @@
         </div>
         
         <!-- Science Card -->
-        <div class="col-md-3">
+        <div class="col-12 col-sm-6 col-md-3">
           <div class="subject-card science h-100">
             <div class="card-body text-center p-4">
               <i class="fas fa-flask fa-4x mb-3" style="color: var(--science-color);"></i>
@@ -201,7 +255,7 @@
         </div>
         
         <!-- Languages Card -->
-        <div class="col-md-3">
+        <div class="col-12 col-sm-6 col-md-3">
           <div class="subject-card" style="border-top-color: #3498db;">
             <div class="card-body text-center p-4">
               <i class="fas fa-language fa-4x mb-3" style="color: #3498db;"></i>
@@ -225,7 +279,7 @@
       
       <div class="row g-4">
         <!-- First Middle -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="card h-100 position-relative">
             <span class="level-badge badge bg-primary">أولى متوسط</span>
             <div class="card-body text-center">
@@ -248,7 +302,7 @@
         </div>
         
         <!-- Second Middle -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="card h-100 position-relative">
             <span class="level-badge badge bg-primary">ثاني متوسط</span>
             <div class="card-body text-center">
@@ -271,7 +325,7 @@
         </div>
         
         <!-- Third Middle -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="card h-100 position-relative">
             <span class="level-badge badge bg-primary">ثالث متوسط</span>
             <div class="card-body text-center">
@@ -294,7 +348,7 @@
         </div>
         
         <!-- Fourth Middle -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="card h-100 position-relative">
             <span class="level-badge badge bg-primary">رابع متوسط</span>
             <div class="card-body text-center">
@@ -386,30 +440,22 @@
                 <label class="form-label">المادة/المواد المطلوبة</label>
                 <select class="form-select" name="subject" required>
                   <option value="">-- اختر المادة --</option>
-                  
-                  <!-- المواد العلمية الأساسية -->
                   <optgroup label="المواد العلمية">
                     <option value="الرياضيات">الرياضيات</option>
                     <option value="الفيزياء">الفيزياء</option>
                     <option value="العلوم الطبيعية">العلوم الطبيعية</option>
                   </optgroup>
-                  
-                  <!-- مجموعات المواد العلمية -->
                   <optgroup label="مجموعات المواد العلمية">
                     <option value="الرياضيات والفيزياء">الرياضيات والفيزياء</option>
                     <option value="الرياضيات والعلوم">الرياضيات والعلوم</option>
                     <option value="الفيزياء والعلوم">الفيزياء والعلوم</option>
                     <option value="المواد الثلاث">المواد العلمية الثلاث</option>
                   </optgroup>
-                  
-                  <!-- اللغات -->
                   <optgroup label="اللغات">
                     <option value="اللغة الإنجليزية">الإنجليزية</option>
                     <option value="اللغة الفرنسية">الفرنسية</option>
                     <option value="اللغة العربية">العربية</option>
                   </optgroup>
-                  
-                  <!-- مجموعات متكاملة -->
                   <optgroup label="باقات متكاملة">
                     <option value="المواد العلمية واللغات">جميع المواد العلمية واللغات</option>
                     <option value="العلوم واللغات">العلوم واللغات</option>
@@ -468,9 +514,8 @@
       <h2 class="fw-bold mb-3">تواصل معنا</h2>
       <p class="lead text-muted">نحن هنا لمساعدتك في أي استفسار</p>
     </div>
-    
     <div class="row g-4">
-      <div class="col-md-4">
+      <div class="col-12 col-md-4">
         <div class="text-center p-4">
           <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-3 d-inline-block">
             <i class="fas fa-phone-alt fa-2x"></i>
@@ -479,8 +524,7 @@
           <p class="mb-0" dir="ltr">0552 65 60 78</p>
         </div>
       </div>
-      
-      <div class="col-md-4">
+      <div class="col-12 col-md-4">
         <div class="text-center p-4">
           <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-3 d-inline-block">
             <i class="fas fa-envelope fa-2x"></i>
@@ -489,8 +533,7 @@
           <p class="mb-0">contact@excellence-academy.com</p>
         </div>
       </div>
-      
-      <div class="col-md-4">
+      <div class="col-12 col-md-4">
         <div class="text-center p-4">
           <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-3 d-inline-block">
             <i class="fas fa-map-marker-alt fa-2x"></i>
@@ -517,7 +560,6 @@
           <a href="#" class="text-dark"><i class="fab fa-telegram-plane fa-lg"></i></a>
         </div>
       </div>
-      
       <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
         <h5 class="mb-4">روابط سريعة</h5>
         <ul class="list-unstyled">
@@ -528,7 +570,6 @@
           <li class="mb-2"><a href="#contact" class="text-dark text-decoration-none">اتصل بنا</a></li>
         </ul>
       </div>
-      
       <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
         <h5 class="mb-4">المواد التعليمية</h5>
         <ul class="list-unstyled">
@@ -537,7 +578,6 @@
           <li class="mb-2"><a href="#" class="text-dark text-decoration-none">العلوم الطبيعية</a></li>
         </ul>
       </div>
-      
       <div class="col-lg-3">
         <h5 class="mb-4">النشرة البريدية</h5>
         <p>اشترك ليصلك كل جديد عن الدروس والمواد التعليمية</p>
@@ -547,9 +587,7 @@
         </div>
       </div>
     </div>
-    
     <hr class="my-4">
-    
     <div class="text-center">
       <p class="mb-0">© 2023 أكاديمية التميز. جميع الحقوق محفوظة.</p>
     </div>
@@ -601,24 +639,23 @@
     this.value = this.value.replace(/[^0-9+]/g, '');
   });
 </script>
-  <script>
-    // تعطيل النقر بزر الماوس الأيمن
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-    });
+<script>
+  // تعطيل النقر بزر الماوس الأيمن
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  });
 
-    // تعطيل التحديد
-    document.onselectstart = function () {
-        return false;
-    };
+  // تعطيل التحديد
+  document.onselectstart = function () {
+      return false;
+  };
 
-    // تعطيل اختصارات لوحة المفاتيح مثل Ctrl+C
-    document.addEventListener('keydown', function(e) {
-        if (e.ctrlKey && (e.key === 'c' || e.key === 'C')) {
-            e.preventDefault();
-        }
-    });
-
+  // تعطيل اختصارات لوحة المفاتيح مثل Ctrl+C
+  document.addEventListener('keydown', function(e) {
+      if (e.ctrlKey && (e.key === 'c' || e.key === 'C')) {
+          e.preventDefault();
+      }
+  });
 </script>
 </body>
 </html>

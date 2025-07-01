@@ -383,18 +383,39 @@
             </div>
             
             <div class="mb-3">
-              <label class="form-label">المادة/المواد المطلوبة</label>
-              <select class="form-select" name="subject" required>
-                <option value="">-- اختر المادة --</option>
-                <option value="الرياضيات">الرياضيات</option>
-                <option value="الفيزياء">الفيزياء</option>
-                <option value="العلوم الطبيعية">العلوم الطبيعية</option>
-                <option value="الرياضيات والفيزياء">الرياضيات والفيزياء</option>
-                <option value="الرياضيات والعلوم">الرياضيات والعلوم</option>
-                <option value="الفيزياء والعلوم">الفيزياء والعلوم</option>
-                <option value="المواد الثلاث">المواد الثلاث</option>
-              </select>
-            </div>
+                <label class="form-label">المادة/المواد المطلوبة</label>
+                <select class="form-select" name="subject" required>
+                  <option value="">-- اختر المادة --</option>
+                  
+                  <!-- المواد العلمية الأساسية -->
+                  <optgroup label="المواد العلمية">
+                    <option value="الرياضيات">الرياضيات</option>
+                    <option value="الفيزياء">الفيزياء</option>
+                    <option value="العلوم الطبيعية">العلوم الطبيعية</option>
+                  </optgroup>
+                  
+                  <!-- مجموعات المواد العلمية -->
+                  <optgroup label="مجموعات المواد العلمية">
+                    <option value="الرياضيات والفيزياء">الرياضيات والفيزياء</option>
+                    <option value="الرياضيات والعلوم">الرياضيات والعلوم</option>
+                    <option value="الفيزياء والعلوم">الفيزياء والعلوم</option>
+                    <option value="المواد الثلاث">المواد العلمية الثلاث</option>
+                  </optgroup>
+                  
+                  <!-- اللغات -->
+                  <optgroup label="اللغات">
+                    <option value="اللغة الإنجليزية">الإنجليزية</option>
+                    <option value="اللغة الفرنسية">الفرنسية</option>
+                    <option value="اللغة العربية">العربية</option>
+                  </optgroup>
+                  
+                  <!-- مجموعات متكاملة -->
+                  <optgroup label="باقات متكاملة">
+                    <option value="المواد العلمية واللغات">جميع المواد العلمية واللغات</option>
+                    <option value="العلوم واللغات">العلوم واللغات</option>
+                  </optgroup>
+                </select>
+              </div>
             <div class="mb-3">
               <label class="form-label">اللغات المطلوبة</label>
               <div class="form-check">

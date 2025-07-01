@@ -109,180 +109,215 @@
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--dark-color);">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <i class="fas fa-atom me-2"></i>أكاديمية التميز
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="#home">الرئيسية</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#subjects">المواد</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#levels">المستويات</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#register">التسجيل</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">اتصل بنا</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Hero Section -->
-<section id="home" class="hero-section text-center">
-  <div class="container">
-    <h1 class="display-4 fw-bold mb-4">التعليم المتوسط في المواد العلمية</h1>
-    <p class="lead mb-5">أفضل شرح لمواد الرياضيات، الفيزياء والعلوم الطبيعية لجميع مستويات المتوسط</p>
-    <div class="d-flex justify-content-center gap-3">
-      <a href="#register" class="btn btn-primary btn-lg px-4">
-        <i class="fas fa-user-graduate me-2"></i>سجل الآن
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-atom me-2"></i>أكاديمية التميز
       </a>
-      <a href="#subjects" class="btn btn-outline-light btn-lg px-4">
-        <i class="fas fa-book-open me-2"></i>استعرض المواد
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- Subjects Section -->
-<section id="subjects" class="py-5">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold mb-3">المواد التعليمية</h2>
-      <p class="lead text-muted">اختر المادة التي تريد تعلمها</p>
-    </div>
-    
-    <div class="row g-4">
-      <!-- Math Card -->
-      <div class="col-md-4">
-        <div class="subject-card math h-100">
-          <div class="card-body text-center p-4">
-            <i class="fas fa-square-root-alt fa-4x mb-3" style="color: var(--math-color);"></i>
-            <h3 class="mb-3">الرياضيات</h3>
-            <p class="mb-4">شرح مفصل لجميع دروس الرياضيات مع تمارين تطبيقية وحلول نماذج الاختبارات</p>
-            <a href="#register" class="btn btn-outline-primary">سجل في مادة الرياضيات</a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Physics Card -->
-      <div class="col-md-4">
-        <div class="subject-card physics h-100">
-          <div class="card-body text-center p-4">
-            <i class="fas fa-atom fa-4x mb-3" style="color: var(--physics-color);"></i>
-            <h3 class="mb-3">الفيزياء</h3>
-            <p class="mb-4">تجارب عملية وتفسيرات واضحة لظواهر الفيزياء مع تطبيقات حياتية</p>
-            <a href="#register" class="btn btn-outline-primary">سجل في مادة الفيزياء</a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Science Card -->
-      <div class="col-md-4">
-        <div class="subject-card science h-100">
-          <div class="card-body text-center p-4">
-            <i class="fas fa-flask fa-4x mb-3" style="color: var(--science-color);"></i>
-            <h3 class="mb-3">العلوم الطبيعية</h3>
-            <p class="mb-4">شرح مبسط للعلوم الطبيعية مع تجارب تفاعلية وخرائط ذهنية</p>
-            <a href="#register" class="btn btn-outline-primary">سجل في مادة العلوم</a>
-          </div>
-        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#subjects">المواد</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#levels">المستويات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#register">التسجيل</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">اتصل بنا</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- Levels Section -->
-<section id="levels" class="py-5 bg-light">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold mb-3">المستويات المتاحة</h2>
-      <p class="lead text-muted">اختر مستواك الدراسي</p>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section id="home" class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-4">التعليم المتوسط في المواد العلمية واللغوية</h1>
+      <p class="lead mb-5">أفضل شرح للمواد العلمية واللغات لجميع مستويات المتوسط</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#register" class="btn btn-primary btn-lg px-4">
+          <i class="fas fa-user-graduate me-2"></i>سجل الآن
+        </a>
+        <a href="#subjects" class="btn btn-outline-light btn-lg px-4">
+          <i class="fas fa-book-open me-2"></i>استعرض المواد
+        </a>
+      </div>
     </div>
-    
-    <div class="row g-4">
-      <!-- First Middle -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 position-relative">
-          <span class="level-badge badge bg-primary">أولى متوسط</span>
-          <div class="card-body text-center">
-            <h4 class="card-title">أولى متوسط</h4>
-            <p class="card-text">شرح مبني على المنهج الرسمي مع تعزيز الأساسيات</p>
-            <ul class="list-unstyled text-start">
-              <li><i class="fas fa-check text-success me-2"></i>رياضيات أولى متوسط</li>
-              <li><i class="fas fa-check text-success me-2"></i>فيزياء أولى متوسط</li>
-              <li><i class="fas fa-check text-success me-2"></i>علوم أولى متوسط</li>
-            </ul>
-            <a href="#register" class="btn btn-primary">اختر هذا المستوى</a>
-          </div>
-        </div>
+  </section>
+  
+  <!-- Subjects Section -->
+  <section id="subjects" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold mb-3">المواد التعليمية</h2>
+        <p class="lead text-muted">اختر المادة التي تريد تعلمها</p>
       </div>
       
-      <!-- Second Middle -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 position-relative">
-          <span class="level-badge badge bg-primary">ثاني متوسط</span>
-          <div class="card-body text-center">
-            <h4 class="card-title">ثاني متوسط</h4>
-            <p class="card-text">تعميق المفاهيم العلمية وتطوير المهارات التحليلية</p>
-            <ul class="list-unstyled text-start">
-              <li><i class="fas fa-check text-success me-2"></i>رياضيات ثاني متوسط</li>
-              <li><i class="fas fa-check text-success me-2"></i>فيزياء ثاني متوسط</li>
-              <li><i class="fas fa-check text-success me-2"></i>علوم ثاني متوسط</li>
-            </ul>
-            <a href="#register" class="btn btn-primary">اختر هذا المستوى</a>
+      <div class="row g-4">
+        <!-- Math Card -->
+        <div class="col-md-3">
+          <div class="subject-card math h-100">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-square-root-alt fa-4x mb-3" style="color: var(--math-color);"></i>
+              <h3 class="mb-3">الرياضيات</h3>
+              <p class="mb-4">شرح مفصل لجميع دروس الرياضيات مع تمارين تطبيقية</p>
+              <a href="#register" class="btn btn-outline-primary">سجل في الرياضيات</a>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <!-- Third Middle -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 position-relative">
-          <span class="level-badge badge bg-primary">ثالث متوسط</span>
-          <div class="card-body text-center">
-            <h4 class="card-title">ثالث متوسط</h4>
-            <p class="card-text">تحضير مكثف للامتحانات وتطوير التفكير العلمي</p>
-            <ul class="list-unstyled text-start">
-              <li><i class="fas fa-check text-success me-2"></i>رياضيات ثالث متوسط</li>
-              <li><i class="fas fa-check text-success me-2"></i>فيزياء ثالث متوسط</li>
-              <li><i class="fas fa-check text-success me-2"></i>علوم ثالث متوسط</li>
-            </ul>
-            <a href="#register" class="btn btn-primary">اختر هذا المستوى</a>
+        
+        <!-- Physics Card -->
+        <div class="col-md-3">
+          <div class="subject-card physics h-100">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-atom fa-4x mb-3" style="color: var(--physics-color);"></i>
+              <h3 class="mb-3">الفيزياء</h3>
+              <p class="mb-4">تجارب عملية وتفسيرات واضحة لظواهر الفيزياء</p>
+              <a href="#register" class="btn btn-outline-primary">سجل في الفيزياء</a>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <!-- Fourth Middle -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 position-relative">
-          <span class="level-badge badge bg-primary">رابع متوسط</span>
-          <div class="card-body text-center">
-            <h4 class="card-title">رابع متوسط</h4>
-            <p class="card-text">تحضير شامل لامتحان نهاية مرحلة التعليم المتوسط</p>
-            <ul class="list-unstyled text-start">
-              <li><i class="fas fa-check text-success me-2"></i>رياضيات رابع متوسط</li>
-              <li><i class="fas fa-check text-success me-2"></i>فيزياء رابع متوسط</li>
-              <li><i class="fas fa-check text-success me-2"></i>علوم رابع متوسط</li>
-            </ul>
-            <a href="#register" class="btn btn-primary">اختر هذا المستوى</a>
+        
+        <!-- Science Card -->
+        <div class="col-md-3">
+          <div class="subject-card science h-100">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-flask fa-4x mb-3" style="color: var(--science-color);"></i>
+              <h3 class="mb-3">العلوم</h3>
+              <p class="mb-4">شرح مبسط للعلوم الطبيعية مع تجارب تفاعلية</p>
+              <a href="#register" class="btn btn-outline-primary">سجل في العلوم</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Languages Card -->
+        <div class="col-md-3">
+          <div class="subject-card" style="border-top-color: #3498db;">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-language fa-4x mb-3" style="color: #3498db;"></i>
+              <h3 class="mb-3">اللغات</h3>
+              <p class="mb-4">تعلم اللغات الإنجليزية والفرنسية والعربية</p>
+              <a href="#register" class="btn btn-outline-primary">سجل في اللغات</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
+  
+  <!-- Levels Section -->
+  <section id="levels" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold mb-3">المستويات المتاحة</h2>
+        <p class="lead text-muted">اختر مستواك الدراسي</p>
+      </div>
+      
+      <div class="row g-4">
+        <!-- First Middle -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 position-relative">
+            <span class="level-badge badge bg-primary">أولى متوسط</span>
+            <div class="card-body text-center">
+              <h4 class="card-title">أولى متوسط</h4>
+              <p class="card-text">شرح مبني على المنهج الرسمي مع تعزيز الأساسيات</p>
+              <ul class="list-unstyled text-start">
+                <li class="fw-bold text-primary">المواد العلمية:</li>
+                <li><i class="fas fa-check text-success me-2"></i>الرياضيات</li>
+                <li><i class="fas fa-check text-success me-2"></i>الفيزياء</li>
+                <li><i class="fas fa-check text-success me-2"></i>العلوم</li>
+                
+                <li class="fw-bold text-primary mt-2">اللغات:</li>
+                <li><i class="fas fa-check text-info me-2"></i>الإنجليزية</li>
+                <li><i class="fas fa-check text-info me-2"></i>الفرنسية</li>
+                <li><i class="fas fa-check text-info me-2"></i>العربية</li>
+              </ul>
+              <a href="#register" class="btn btn-primary mt-2">اختر هذا المستوى</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Second Middle -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 position-relative">
+            <span class="level-badge badge bg-primary">ثاني متوسط</span>
+            <div class="card-body text-center">
+              <h4 class="card-title">ثاني متوسط</h4>
+              <p class="card-text">تعميق المفاهيم العلمية واللغوية</p>
+              <ul class="list-unstyled text-start">
+                <li class="fw-bold text-primary">المواد العلمية:</li>
+                <li><i class="fas fa-check text-success me-2"></i>الرياضيات</li>
+                <li><i class="fas fa-check text-success me-2"></i>الفيزياء</li>
+                <li><i class="fas fa-check text-success me-2"></i>العلوم</li>
+                
+                <li class="fw-bold text-primary mt-2">اللغات:</li>
+                <li><i class="fas fa-check text-info me-2"></i>الإنجليزية</li>
+                <li><i class="fas fa-check text-info me-2"></i>الفرنسية</li>
+                <li><i class="fas fa-check text-info me-2"></i>العربية</li>
+              </ul>
+              <a href="#register" class="btn btn-primary mt-2">اختر هذا المستوى</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Third Middle -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 position-relative">
+            <span class="level-badge badge bg-primary">ثالث متوسط</span>
+            <div class="card-body text-center">
+              <h4 class="card-title">ثالث متوسط</h4>
+              <p class="card-text">تحضير مكثف للامتحانات النهائية</p>
+              <ul class="list-unstyled text-start">
+                <li class="fw-bold text-primary">المواد العلمية:</li>
+                <li><i class="fas fa-check text-success me-2"></i>الرياضيات</li>
+                <li><i class="fas fa-check text-success me-2"></i>الفيزياء</li>
+                <li><i class="fas fa-check text-success me-2"></i>العلوم</li>
+                
+                <li class="fw-bold text-primary mt-2">اللغات:</li>
+                <li><i class="fas fa-check text-info me-2"></i>الإنجليزية</li>
+                <li><i class="fas fa-check text-info me-2"></i>الفرنسية</li>
+                <li><i class="fas fa-check text-info me-2"></i>العربية</li>
+              </ul>
+              <a href="#register" class="btn btn-primary mt-2">اختر هذا المستوى</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fourth Middle -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 position-relative">
+            <span class="level-badge badge bg-primary">رابع متوسط</span>
+            <div class="card-body text-center">
+              <h4 class="card-title">رابع متوسط</h4>
+              <p class="card-text">تحضير شامل لامتحان نهاية المرحلة</p>
+              <ul class="list-unstyled text-start">
+                <li class="fw-bold text-primary">المواد العلمية:</li>
+                <li><i class="fas fa-check text-success me-2"></i>الرياضيات</li>
+                <li><i class="fas fa-check text-success me-2"></i>الفيزياء</li>
+                <li><i class="fas fa-check text-success me-2"></i>العلوم</li>
+                
+                <li class="fw-bold text-primary mt-2">اللغات:</li>
+                <li><i class="fas fa-check text-info me-2"></i>الإنجليزية</li>
+                <li><i class="fas fa-check text-info me-2"></i>الفرنسية</li>
+                <li><i class="fas fa-check text-info me-2"></i>العربية</li>
+              </ul>
+              <a href="#register" class="btn btn-primary mt-2">اختر هذا المستوى</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 <!-- Registration Section -->
 <section id="register" class="py-5">
   <div class="container">
@@ -359,6 +394,27 @@
                 <option value="الفيزياء والعلوم">الفيزياء والعلوم</option>
                 <option value="المواد الثلاث">المواد الثلاث</option>
               </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">اللغات المطلوبة</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="languages" id="english" value="الإنجليزية">
+                <label class="form-check-label" for="english">
+                  الإنجليزية
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="languages" id="french" value="الفرنسية">
+                <label class="form-check-label" for="french">
+                  الفرنسية
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="languages" id="arabic" value="العربية">
+                <label class="form-check-label" for="arabic">
+                  العربية
+                </label>
+              </div>
             </div>
             
             <div class="mb-3">
@@ -523,6 +579,25 @@
   document.querySelector('input[name="phone"]').addEventListener('input', function(e) {
     this.value = this.value.replace(/[^0-9+]/g, '');
   });
+</script>
+  <script>
+    // تعطيل النقر بزر الماوس الأيمن
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    // تعطيل التحديد
+    document.onselectstart = function () {
+        return false;
+    };
+
+    // تعطيل اختصارات لوحة المفاتيح مثل Ctrl+C
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C')) {
+            e.preventDefault();
+        }
+    });
+
 </script>
 </body>
 </html>
